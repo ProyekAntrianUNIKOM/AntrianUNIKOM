@@ -1,0 +1,22 @@
+<!-- Menu -->
+
+    <div id="bg-row" class="flex" ng-show="ambil">
+        <a href="" class="menu-utama flex" ng-repeat="data in layanan"
+           style="margin-right: 10px" data="{{data.id_pelayanan}}"
+           ng-click="pilihlayanan(data.id_pelayanan)">
+            LAYANAN <br> {{data.nama_pelayanan | uppercase}}
+        </a>
+    </div>
+
+    <div id="bg-row" class="flex" ng-show="loket">
+        <a href="" class="menu-akademik flex" ng-repeat="data in loket" data="{{data.id_loket}}"
+           ng-click="pilihloket(data.no_loket)">{{data.nama_loket | uppercase}}
+        </a>
+
+    </div>
+
+    <div id="back" ng-show="back">
+        <a href="" ng-click="kembali()">
+            <img src="../img/ic_back.png" width="100" alt="back">
+        </a>
+    </div>
